@@ -1,0 +1,13 @@
+export __MYZS_TEMPLATE__VERSION="2" # version 2 (hook)
+
+_myzs:internal:hook:before-plugin() {
+  _myzs:internal:log:debug "before loading plugins"
+}
+
+_myzs:internal:hook:after-plugin() {
+  _myzs:internal:log:debug "after loading plugins"
+}
+
+_myzs:internal:hook:cleanup() {
+  _myzs:internal:log:debug "cleanup <template> plugins"
+}
