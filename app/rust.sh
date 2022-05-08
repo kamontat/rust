@@ -5,7 +5,7 @@ myzs:module:new "$0"
 # $HOME/go is default go path in macos
 export RUSTPATH="${__RUSTPATH:-$HOME/.cargo}"
 
-if _myzs:internal:checker:command-exist "rustup"; then
+if _myzs:internal:checker:folder-exist "$RUSTPATH"; then
   _myzs:internal:path-append "$RUSTPATH/bin"
 
   export RUSTFPATH="/usr/share/zsh/site-functions/_rustup"
