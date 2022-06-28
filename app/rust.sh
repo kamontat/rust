@@ -19,4 +19,5 @@ if _myzs:internal:checker:folder-exist "$RUSTPATH"; then
   fi
 
   _myzs:internal:fpath-push "$RUSTFPATH"
+  compinit -i
 fi
